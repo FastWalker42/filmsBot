@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "ES2022", // Установите целевой уровень ECMAScript
+    "module": "nodenext", // Используйте модульную систему ES2022
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true, // Включите совместимость с CommonJS
+    "skipLibCheck": true, // Пропустите проверку библиотек
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/*.ts"]
+}
