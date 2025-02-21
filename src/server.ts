@@ -15,6 +15,10 @@ app.post(WEBHOOK_PATH, (req, res) => {
   res.sendStatus(200)
 })
 
+app.get('/', (req, res) => {
+  res.send('<h1>Hello</h1>')
+})
+
 app.listen(process.env.PORT, () => {
   console.log(`Сервер запущен на порту ${process.env.PORT}`)
 })
