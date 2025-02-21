@@ -7,7 +7,8 @@
   "module": "ES2022",
   "target": "ES2022",
   "scripts": {
-    "poll": "npx ts-node src/polling.ts"
+    "poll": "npx ts-node src/polling.ts",
+    "server": "npx ts-node src/server.ts"
   },
   "dependencies": {
     "@grammyjs/parse-mode": "^1.11.1",
