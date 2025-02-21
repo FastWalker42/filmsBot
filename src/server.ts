@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello</h1>')
 })
 
-app.listen(process.env.PORT, () => {
+app.listen({ port: process.env.PORT, hostname: '0.0.0.0' }, () => {
   console.log(`Сервер запущен на порту ${process.env.PORT}`)
 })
