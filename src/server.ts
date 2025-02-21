@@ -15,10 +15,11 @@ app.post(WEBHOOK_PATH, (req, res) => {
   res.sendStatus(200)
 })
 
+// Новый маршрут, который возвращает <h1>Hello</h1>
 app.get('/', (req, res) => {
   res.send('<h1>Hello</h1>')
 })
 
-app.listen({ port: process.env.PORT, hostname: '0.0.0.0' }, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Сервер запущен на порту ${process.env.PORT}`)
 })
